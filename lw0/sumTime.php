@@ -1,5 +1,5 @@
 <?php
-$firstTime = '10:20:30';
+$firstTime = '20:20:30';
 $secondTime = '10:20:30';
 $thirdTime = 0;
 function sunTime(string $thirdTime) : string
