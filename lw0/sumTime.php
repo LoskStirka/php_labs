@@ -1,8 +1,5 @@
 <?php
-$firstString = "";
-$secondString = "";
-$thirdArr[2];
-function calculator(string $firstString, string $secondString) : string
+function sumTime(string $firstString, string $secondString) : string
 {
     $correctChars = ' 0123456789:';
     for ($i = 0; $i < strlen($firstString); $i++) {
@@ -26,7 +23,6 @@ function calculator(string $firstString, string $secondString) : string
         $thirdArr[2] = $thirdArr[2] - 60;
     }
     $thirdString = implode(":", $thirdArr);
-
     return $thirdString;
 }
-echo calculator('10:20:30', '10:20:30');
+echo sumTime($argv[1], $argv[2]);
