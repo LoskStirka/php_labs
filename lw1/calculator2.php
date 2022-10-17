@@ -2,32 +2,32 @@
 
 class Calculator 
 {
-    public int $calculatingString;
+    public float $calculatingString;
 
     public function __construct(int $calculatingString)
     {
         $this->calculatingString = $calculatingString;
     }
 
-    public function sum(int $calculatingString): int
+    public function sum(int $calculatingString): self
     {
         $this->calculatingString += $calculatingString;
         return $this;
     }
 
-    public function minus(int $calculatingString): int
+    public function minus(int $calculatingString): self
     {
         $this->calculatingString -= $calculatingString;
         return $this;
     }
 
-    public function product(int $calculatingString): int
+    public function product(int $calculatingString): self
     {
         $this->calculatingString *= $calculatingString;
         return $this;
     }
 
-    public function division(int $calculatingString): int
+    public function division(int $calculatingString): self
     {
         if ($calculatingString === 0) {
             $this->calculatingString = 0;
@@ -39,7 +39,7 @@ class Calculator
         }
     }
 
-    public function getResult(): int
+    public function getResult(): float
     {
         return $this->calculatingString;
     }
