@@ -29,8 +29,8 @@ class Calculator
 
     public function division(int $calculatingString): int
     {
-        if ($calculatingString===0) {
-            $this->calculatingString=0;
+        if ($calculatingString === 0) {
+            $this->calculatingString = 0;
             return $this;
         }
         else {
