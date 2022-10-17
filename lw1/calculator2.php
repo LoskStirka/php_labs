@@ -9,28 +9,34 @@ class Calculator
         $this->calculatingString = $calculatingString;
     }
 
-    public function sum(int $calculatingString)
+    public function sum(int $calculatingString): int
     {
         $this->calculatingString += $calculatingString;
         return $this;
     }
 
-    public function minus(int $calculatingString)
+    public function minus(int $calculatingString): int
     {
         $this->calculatingString -= $calculatingString;
         return $this;
     }
 
-    public function product(int $calculatingString)
+    public function product(int $calculatingString): int
     {
         $this->calculatingString *= $calculatingString;
         return $this;
     }
 
-    public function division(int $calculatingString)
+    public function division(int $calculatingString): int
     {
-        $this->calculatingString /= $calculatingString;
-        return $this;
+        if ($calculatingString===0) {
+            $this->calculatingString=0;
+            return $this;
+        }
+        else {
+            $this->calculatingString /= $calculatingString;
+            return $this;
+        }
     }
 
     public function getResult(): int
