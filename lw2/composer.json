@@ -1,0 +1,18 @@
+{
+    "name": "snego/lw2",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Snego\\Lw2\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "LoskStirka",
+            "email": "snegoweek12@yandex.ru"
+        }
+    ],
+    "require-dev": {
+        "phpstan/phpstan": "^1.9"
+    }
+}
