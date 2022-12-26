@@ -1,0 +1,19 @@
+{
+    "name": "snego/lw4",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Snego\\Lw4\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "LoskStirka",
+            "email": "snegoweek12@yandex.ru"
+        }
+    ],
+    "require-dev": {
+        "phpstan/phpstan": "^1.9",
+        "phpunit/phpunit": "^9.5"
+    }
+}
